@@ -31,7 +31,7 @@
         <label >Number of people</label><br>
         
        <span  class="leftSpan" id="people_decrease">-</span>
-       <input type="text" name="people"  id="people" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="1" min="1" readonly> <span class="leftSpan" id="people_increase" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g,'');">+</span>
+       <input type="text" name="people"  id="people" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="1" min="1" readonly> <span class="leftSpan" id="people_increase" onkeyup="javascript: this.value = this.value.replace(^[a-zA-Z0-9.,/ $@()]+$);">+</span>
 
        <button id="clear">Clear</button>
 	  </div>
