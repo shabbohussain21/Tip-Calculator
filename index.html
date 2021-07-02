@@ -19,19 +19,19 @@
 	  <div class='left'>
 	  
        <label >Bill</label><br>
-       <input type="tel" name="bill"  id="bill"  value="" placeholder="Enter  your bill"  onkeyup="javascript: this.value = this.value.replace(/[^1-8]/g,'');"><br>
+       <input type="tel" name="bill"  id="bill"  value="" placeholder="Enter  your bill"  onkeyup="javascript: this.value = this.value.replace(/[^0-8]/g,'');"><br>
 
         <label >TIP %</label><br>
        
        <span  class="leftSpan" id="tip_decrease">-</span>
-        <input type="text" name="tip"  id="tip" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="15" placeholder="minimum tip 15%" readonly>
+        <input type="text" name="tip"  id="tip"  value="15" placeholder="minimum tip 15%" readonly>
        <span class="leftSpan" id="tip_increase">+</span>
        <br>
 
         <label >Number of people</label><br>
         
        <span  class="leftSpan" id="people_decrease">-</span>
-       <input type="text" name="people"  id="people" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="1" min="1" readonly> <span class="leftSpan" id="people_increase">+</span>
+       <input type="text" name="people"  id="people"  value="1" min="1" readonly> <span class="leftSpan" id="people_increase">+</span>
 
        <button id="clear">Clear</button>
 	  </div>
