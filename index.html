@@ -19,7 +19,7 @@
 	  <div class='left'>
 	  
        <label >Bill</label><br>
-       <input type="tel" name="bill"  id="bill" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="" placeholder="Enter  your bill"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" onkeyup="javascript: this.value = this.value.replace(/[\'^£$%&*()}{@#~?><>,|=_+¬-]/);" ><br>
+       <input type="tel" name="bill"  id="bill" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="" placeholder="Enter  your bill"  onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g,'');"><br>
 
         <label >TIP %</label><br>
        
