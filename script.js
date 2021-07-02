@@ -103,3 +103,19 @@ people_Increase.addEventListener('click',function(){
         people.value = ++j;
         callback();
 });
+
+
+
+bill.addEventListener("keydown", function (e) {
+    if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+         callback();
+    }
+});
+
+
+
+
+
+
+
+
