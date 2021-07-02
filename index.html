@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 class="header">TIP CALCULATOR</h1>
+<div class="main">
+	
+	  <div class='left'>
+	  
+       <label >Bill</label><br>
+       <input type="text" name="bill"  id="bill" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g,'');" placeholder="Enter  your bill"><br>
+
+        <label >TIP %</label><br>
+       
+       <span  class="leftSpan" id="tip_decrease">-</span>
+        <input type="text" name="tip"  id="tip" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="15" placeholder="minimum tip 15%" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g,'');">
+       <span class="leftSpan" id="tip_increase">+</span>
+       <br>
+
+        <label >Number of people</label><br>
+        
+       <span  class="leftSpan" id="people_decrease">-</span>
+       <input type="text" name="people"  id="people" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="1" min="1"> <span class="leftSpan" id="people_increase" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g,'');">+</span>
+
+       <button id="clear">Clear</button>
+	  </div>
+	  <div class="right">
+	  	<div >
+	  	  <h2>Bill  : <span id="billValue">00.00</span></h2>
+	  	</div>
+	  	<div >
+	  	  <h2>TIP  : <span id="tipValue">00.00</span></h2>
+	  	</div>
+	  	<div >
+	  	  <h2>Total : <span id="total">00.0%</span></h2>
+	  	</div>
+	  	<div >
+	  	  <h2>Per Persion Bill : <span id="personBill">00.0%</span></h2>
+	  	</div>
+	  </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="script.js">
+</script>
+</body>
+</html>
