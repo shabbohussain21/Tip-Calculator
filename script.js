@@ -106,7 +106,7 @@ people_Increase.addEventListener('click',function(){
 
 
 
-bill.addEventListener("keydown", function (e) {
+window.document.function (e) {
     if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
          callback();
     }
