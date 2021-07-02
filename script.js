@@ -106,11 +106,11 @@ people_Increase.addEventListener('click',function(){
 
 
 
-window.document.function (e) {
-    if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
-         callback();
-    }
-});
+// window.document.function (e) {
+//     if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+//          callback();
+//     }
+// });
 
 
 
