@@ -19,19 +19,19 @@
 	  <div class='left'>
 	  
        <label >Bill</label><br>
-       <input type="tel" name="bill"  id="bill" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="" placeholder="Enter  your bill"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10"><br>
+       <input type="tel" name="bill"  id="bill" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="" placeholder="Enter  your bill"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" onkeyup="javascript: this.value = this.value.replace(/[\'^£$%&*()}{@#~?><>,|=_+¬-]/);" ><br>
 
         <label >TIP %</label><br>
        
        <span  class="leftSpan" id="tip_decrease">-</span>
-        <input type="text" name="tip"  id="tip" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="15" placeholder="minimum tip 15%" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g,'');" readonly>
+        <input type="text" name="tip"  id="tip" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="15" placeholder="minimum tip 15%" readonly>
        <span class="leftSpan" id="tip_increase">+</span>
        <br>
 
         <label >Number of people</label><br>
         
        <span  class="leftSpan" id="people_decrease">-</span>
-       <input type="text" name="people"  id="people" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="1" min="1" readonly> <span class="leftSpan" id="people_increase" onkeyup="javascript: this.value = this.value.replace(^[a-zA-Z0-9.,/ $@()]+$);">+</span>
+       <input type="text" name="people"  id="people" onkeypress='return event.charCode >= 48 && event.charCode <= 57' value="1" min="1" readonly> <span class="leftSpan" id="people_increase">+</span>
 
        <button id="clear">Clear</button>
 	  </div>
