@@ -25,14 +25,14 @@
 			background-color: #F1C40F;
 			padding-left: 5%;
 			  border-top-left-radius: 20px;
-                          border-bottom-left-radius: 20px;
+/*                           border-bottom-left-radius: 20px; */
 		 }
 		 .right{
 		 	width: 300px;
 			height: 350px;
 			background-color: #45B39D;
 			padding-left: 5%;
-			  border-top-right-radius: 20px;
+/* 			  border-top-right-radius: 20px; */
                           border-bottom-right-radius: 20px;
 		 }
 		/* #left_inner{
@@ -109,7 +109,7 @@
              height: 30%;
             background-color: #F1C40F;
             padding-left: 2%;
-		   border-top-left-radius: 20px;
+            border-top-left-radius: 20px;
             border-top-right-radius: 20px;
          }
          .right{
@@ -119,7 +119,7 @@
             padding-top: 0%;
             background-color: #45B39D;
             padding-left: 2%;
-		  border-bottom-left-radius: 20px;
+            border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
          }
 
